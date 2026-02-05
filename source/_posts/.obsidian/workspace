@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "69310aa46732f02d",
+    "type": "split",
+    "children": [
+      {
+        "id": "27fc058918888efd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "How-to-access-restricted-websites-by-direct.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "909e5e922085b57d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0d24639ecc29d81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ca8c49c696e5815",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fdb12c85bbd0def4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a2b036ef767b0745",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac93772253638bb9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "344b89bd5fdd6aab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "How-to-access-restricted-websites-by-direct.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "344b89bd5fdd6aab",
+  "lastOpenFiles": [
+    "how-to-get-ewt-cookie.md",
+    "How-to-access-restricted-websites-by-direct.md",
+    "hello-world.md"
+  ]
+}

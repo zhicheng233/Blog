@@ -1,0 +1,240 @@
+#! ---------------------------------------------------------------
+#! Aurora Theme for Hexo
+#! ---------------------------------------------------------------
+#! Designed & Coded By TriDiamond
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#！ @docs https://aurora.tridiamond.tech/guide/configuration.html
+#! ---------------------------------------------------------------
+site:
+  subtitle: 志成zhi_cheng的Blog
+  author: 志成zhi_cheng
+  nick: Auroral UI
+  description: '<p style="font-size:13px;">所有命运的馈赠 早已在暗中标注好了价格</p><p>一只可爱的猫猫喵</p><p>SLATT Member</p>'
+  link: '/'
+  language: zh-CN
+  multi_language: true
+  logo: /image/ZCLOGO.jpg
+  avatar: /image/ZCLOGO.jpg
+  beian:
+    number: '萌ICP备20241208号'
+    link: 'https://icp.gov.moe/?keyword=20241208'
+  police_beian:
+    number: ''
+    link: ''
+  
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#！ @docs https://aurora.tridiamond.tech/guide/authors.html
+#! ---------------------------------------------------------------
+authors:
+  ##! example
+  # TriDiamond:
+  #   name: TriDiamond
+  #   avatar: https://up.enterdesk.com/edpic_source/44/ff/3d/44ff3d6bd2819d524facfcc33205d4cd.jpg
+  #   link: https://github.com/TriDiamond
+  #   description: 'Think like an artist, code like an artisan.'
+  #   socials:
+  #     github: https://tridiamond.tech
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#！ @docs https://aurora.tridiamond.tech/guide/menu.html
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives: true
+  Links: true
+  
+
+  Message-board:
+    name: 'Message Board'
+    i18n:
+      zh-CN: '留言板'
+      zh-TW: '留言板'
+      en: 'Message Board'
+    path: '/page/message-board' 
+  More-pages:
+    name: 'More'
+    i18n: 
+      zh-CN: '更多'
+      zh-TW: '更多'
+      en: 'More'
+    children:
+      Home-Pages:
+        name: 'Home Pages'
+        i18n: 
+          zh-CN: '个人主页'
+          zh-TW: '個人主頁'
+          en: 'Home Pages'
+        path: 'https://zhicheng233.top'
+      Donate:
+        name: 'Donate'
+        i18n: 
+          zh-CN: '捐赠支持'
+          zh-TW: '捐贈支持'
+          en: 'Donate'
+        path: 'https://zhicheng233.top/Donate'
+
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: auto
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
+  feature: false
+  gradient:
+    color_1: '#5bcefb'
+    color_2: '#f5a8ba'
+    color_3: '#ffffff'
+    # color_1: '#c6ffdd'
+    # color_2: '#fbd786'
+    # color_3: '#f7797d'
+    # color_1: '#24c6dc'
+    # color_2: '#5433ff'
+    # color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! @docs https://aurora.tridiamond.tech/guide/social.html
+#! ---------------------------------------------------------------
+socials:
+  customs:
+    Github:
+      icon: /data/svg/github.svg
+      link: https://github.com/zhicheng233
+    
+    bilibili:
+      icon: /data/svg/bilibili.svg
+      link: https://space.bilibili.com/350354944
+    
+    twitter:
+      icon: /data/svg/Twitter.svg
+      link: https://twitter.com/zhi_cheng233
+
+    Email:
+      icon: /data/svg/mail.svg
+      link: mailto:mczhicheng@outlook.com
+
+    QQ:
+      icon: /data/svg/QQ.svg
+      link: http://wpa.qq.com/msgrd?v=3&uin=2473367376&site=qq&menu=yes
+    
+
+    RSS:
+      icon: /data/svg/RSS.svg
+      link: /rss2.xml
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! @docs https://aurora.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: cn
+  favicon:
+  description: '一只可爱的猫猫喵'
+  keywords: 'development, Blog, Aurora Theme, Hexo, zhicheng233，zhi_cheng233, 志成zhi_cheng, 志成, ZCROM , mtf, mczhicheng@outlook.com'
+  author: '志成zhi_cheng'
+
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  theme: vitesse-dark
+  backgroundColor: '#1a1a1a'
+#! ---------------------------------------------------------------
+#! Plugins
+#! @docs https://aurora.tridiamond.tech/guide/plugins.html
+#! ---------------------------------------------------------------
+
+# For local development only!
+gitalk:
+  enable: false
+  autoExpand: true
+  clientID: 'e07ab8e7c558c5b16ed2'
+  clientSecret: '685589b1dfae466e958840e5de530b066f697aba'
+  repo: 'zhicheng233.github.io'
+  owner: 'zhicheng233'
+  admin: ['zhicheng233']
+  id: uid
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: en
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: []
+  admin: 'TriDiamond'
+  recentComment: true
+# Waline comment plugin
+# see https://waline.js.org/guide/get-started/
+waline:
+  enable: true
+  recentComment: true
+  reaction: true
+  login: 'enable'
+  meta: ['nick', 'mail', 'link']
+  requiredMeta: ['nick', 'mail']
+  commentSorting: 'latest'
+  serverURL: 'https://waline.zhicheng233.top/' # Server URL
+# Enable Busuanzi statistic plugin
+# see http://ibruce.info/2015/04/04/busuanzi/
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: false
+  author:
+    cn: 作者
+    en: Author
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Enable Aurora Bot Dia
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+aurora_bot:
+  enable: false
+  locale: en
+  bot_type: dia
+  tips:
+
+#! ---------------------------------------------------------------
+#! Injections
+#! @docs https://aurora.tridiamond.tech/guide/site-meta.html#custom-meta
+#! ---------------------------------------------------------------
+injects:
+  scripts: 
+  - <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  - <script src="/live2d-widget/autoload.js"></script>
+  #- <script src="https://blog.zhicheng233.top/page/dist/APlayer.min.js"></script>
+  - <script src="https://blog.zhicheng233.top/page/dist/music.js"></script> 
+  - <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+  
+  css:
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  - <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+#  - <link rel="stylesheet" href="/page/dist/APlayer.min.css">
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">

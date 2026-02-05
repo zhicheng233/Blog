@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "69310aa46732f02d",
+    "type": "split",
+    "children": [
+      {
+        "id": "83fbe0d099d09c2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fd7645f2d90d99f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "浅谈V2ray & Cloudflare Zero Trust.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "浅谈V2ray & Cloudflare Zero Trust"
+            }
+          },
+          {
+            "id": "68d011f6782691b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "解决Office无法运行0x426-0x0 安装报0xc000005.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "解决Office无法运行0x426-0x0 安装报0xc000005"
+            }
+          },
+          {
+            "id": "e20f9ccf39d9b6e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "解决Office无法运行0x426-0x0 安装报0xc000005.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "解决Office无法运行0x426-0x0 安装报0xc000005"
+            }
+          },
+          {
+            "id": "5d0a3818810ddb8b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "909e5e922085b57d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0d24639ecc29d81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ca8c49c696e5815",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "fdb12c85bbd0def4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "759f718c23ad7e67",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a2b036ef767b0745",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac93772253638bb9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "344b89bd5fdd6aab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
+    }
+  },
+  "active": "5d0a3818810ddb8b",
+  "lastOpenFiles": [
+    "24年通过Telnet获取电信天翼网关超管密码-HS8145C5.md",
+    "image/Pasted image 20241130220924.png",
+    "解决Office无法运行0x426-0x0 安装报0xc000005.md",
+    "浅谈V2ray & Cloudflare Zero Trust.md",
+    "How-to-access-restricted-websites-by-direct.md",
+    "image/QQ_1732976400259.png",
+    "image/Pasted image 20240721091044.png",
+    "image/Pasted image 20240721091020.png",
+    "how-to-crack-JetBrainsTool.md",
+    "how-to-get-ewt-cookie.md",
+    "bak/how-to-crack-JetBrainsTool.md",
+    "bak/浅谈V2ray & Cloudfare Zero Trust.md",
+    "bak/How-to-access-restricted-websites-by-direct.md",
+    "bak",
+    "新建文件夹",
+    "image/04cdb29f1ae209a18ce77fe9f767b5e9.png",
+    "image/Pasted image 20230218141338.png",
+    "笔记/create a link.md",
+    "笔记/Welcome.md",
+    "笔记",
+    "树成林 23.11.18.md",
+    "image/Pasted image 20240206123350.png",
+    "image/Pasted image 20240206123339.png",
+    "image/Pasted image 20240206123125.png",
+    "image/Pasted image 20240206122922.png",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "hello-world.md",
+    "image/0460bb23479f2114d259728156f79dcf.jpg.md",
+    "image/20221222_170359.png.md",
+    "image/20221222-170359.png.md",
+    "20221222_162909.png.md"
+  ]
+}
