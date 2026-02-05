@@ -1,4 +1,4 @@
-$filePath = "public\rss2.xml"
+$filePath = "public/rss2.xml"
 $searchString = ".html<"
 $replaceString = "<"
  
