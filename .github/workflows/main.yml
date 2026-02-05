@@ -1,0 +1,52 @@
+name: Hexo Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的 push 事件，触发自动化部署
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # 使用 Ubuntu 环境，如果你希望 Windows 环境，可以改成 windows-latest
+
+    steps:
+    # 1. 检出代码
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2. 设置 Node.js 环境
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # 你使用的 Node.js 版本，确保兼容 Hexo
+
+    # 3. 安装 Hexo 依赖
+    - name: Install dependencies
+      run: |
+        npm install
+        npm install hexo-theme-aurora hexo-plugin-aurora --save
+        
+
+    # 4. 同步图片（类似你的 @echo off 脚本）
+    - name: Sync images
+      run: |
+        mkdir -p source/image
+        cp -r source/_posts/image source/image
+
+    # 5. 处理 RSS（假设你已经上传了处理脚本）
+    - name: Fix rss2.xml
+      run: |
+        pwsh ./处理rss2.xml.ps1
+
+    # 6. 构建 Hexo 网站
+    - name: Build Hexo site
+      run: |
+        hexo clean
+        hexo generate
+
+    # 7. 部署 Hexo 到目标仓库
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 提供的 token
+        publish_dir: ./public  # Hexo 生成的静态文件路径
