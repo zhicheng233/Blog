@@ -3,7 +3,7 @@ name: Hexo Build and Deploy
 on:
   push:
     branches:
-      - main  # 监听 main 分支的 push 事件，触发自动化部署
+      - master  # 监听 main 分支的 push 事件，触发自动化部署
 
 jobs:
   build:
