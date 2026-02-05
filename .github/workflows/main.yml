@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-        npm install -g hexo-cli
+        npm install -g hexo
         npm install hexo-theme-aurora hexo-plugin-aurora --save
         
 
@@ -49,6 +49,7 @@ jobs:
     - name: Push to GitHub Pages branch
       uses: ad-m/github-push-action@v0.6.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # 这里使用 GitHub 提供的 token
-        branch: gh-pages  # 你想要推送到的目标分支（可以是目标仓库的分支）
-        directory: ./public  # Hexo 生成的文件夹，默认是 public
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        directory: public
+        force: true
