@@ -11,14 +11,10 @@
             "id": "59595e9ae498c64d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/24年通过Telnet获取电信天翼网关超管密码-HS8145C5.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "24年通过Telnet获取电信天翼网关超管密码-HS8145C5"
+              "title": "新标签页"
             }
           }
         ]
@@ -160,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -168,6 +165,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "59595e9ae498c64d",
-  "lastOpenFiles": []
+  "active": "d7226b9e254b8def",
+  "lastOpenFiles": [
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "未命名.base",
+    "source/_posts/Live2D Cubism Editor 5.3.00 破解版.md",
+    "source/_posts/how-to-get-ewt-cookie.md",
+    "source/_posts/浅谈V2ray & Cloudflare Zero Trust.md",
+    "source/_posts/How-to-access-restricted-websites-by-direct.md",
+    "source/_posts/24年通过Telnet获取电信天翼网关超管密码-HS8145C5.md"
+  ]
 }
