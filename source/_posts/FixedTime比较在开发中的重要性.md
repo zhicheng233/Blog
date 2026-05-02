@@ -15,12 +15,12 @@ cssclasses:
 # 前言
 开始前咱们先看两段代码:
 
-```C#
+```csharp
 	var input = request.QueryString["password"];
 	return string.Equals(input, Password, StringComparison.Ordinal);
 ```
 
-```C#
+```csharp
 		var input = request.QueryString["password"];
 		return FixedTimeEquals(input, Password); 
 	} 
