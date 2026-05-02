@@ -14,6 +14,7 @@ cssclasses:
 ---
 # 前言
 开始前咱们先看两段代码:
+
 ```C#
 	var input = request.QueryString["password"];
 	return string.Equals(input, Password, StringComparison.Ordinal);
