@@ -50,15 +50,17 @@
             }
           },
           {
-            "id": "5d0a3818810ddb8b",
+            "id": "b263f0a29ac47fc3",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.7"
+                "file": "FixedTime比较在开发中的重要性.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.7"
+              "title": "FixedTime比较在开发中的重要性"
             }
           }
         ],
@@ -81,7 +83,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -134,6 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FixedTime比较在开发中的重要性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "FixedTime比较在开发中的重要性 的反向链接列表"
             }
           }
         ]
@@ -154,6 +158,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -161,17 +166,20 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "5d0a3818810ddb8b",
+  "active": "b263f0a29ac47fc3",
   "lastOpenFiles": [
+    "浅谈V2ray & Cloudflare Zero Trust.md",
+    "未命名.base",
+    "FixedTime比较在开发中的重要性.md",
+    "how-to-crack-JetBrainsTool.md",
+    "How-to-access-restricted-websites-by-direct.md",
+    "Live2D-Cubism-Editor-5.3.00-Crack.md",
+    "解决Office无法运行0x426-0x0 安装报0xc000005.md",
     "24年通过Telnet获取电信天翼网关超管密码-HS8145C5.md",
     "image/Pasted image 20241130220924.png",
-    "解决Office无法运行0x426-0x0 安装报0xc000005.md",
-    "浅谈V2ray & Cloudflare Zero Trust.md",
-    "How-to-access-restricted-websites-by-direct.md",
     "image/QQ_1732976400259.png",
     "image/Pasted image 20240721091044.png",
     "image/Pasted image 20240721091020.png",
-    "how-to-crack-JetBrainsTool.md",
     "how-to-get-ewt-cookie.md",
     "bak/how-to-crack-JetBrainsTool.md",
     "bak/浅谈V2ray & Cloudfare Zero Trust.md",
