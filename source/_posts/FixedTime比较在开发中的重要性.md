@@ -15,25 +15,25 @@ cssclasses:
 # 前言
 开始前咱们先看两段代码:
 ```C#
-var input = request.QueryString["password"];
-return string.Equals(input, Password, StringComparison.Ordinal);
+	var input = request.QueryString["password"];
+	return string.Equals(input, Password, StringComparison.Ordinal);
 ```
 
 ```C#
-	var input = request.QueryString["password"];
-	return FixedTimeEquals(input, Password); 
-} 
-private static bool FixedTimeEquals(string left, string right)
-{ 
-	if (left == null || right == null) return false;
-	if (left.Length != right.Length) return false;
-	int result = 0;
-	for (int i = 0; i < left.Length; i++)
+		var input = request.QueryString["password"];
+		return FixedTimeEquals(input, Password); 
+	} 
+	private static bool FixedTimeEquals(string left, string right)
 	{ 
-		result |= left[i] ^ right[i]; 
-	}
-	return result == 0;
-}
+		if (left == null || right == null) return false;
+		if (left.Length != right.Length) return false;
+		int result = 0;
+		for (int i = 0; i < left.Length; i++)
+		{ 
+			result |= left[i] ^ right[i]; 
+		}
+		return result == 0;
+		}
 ```
 
 同样实现一个逻辑，为什么第二种写法会复杂如此之多，为何我们需要使用后者，而不是前者呢？
