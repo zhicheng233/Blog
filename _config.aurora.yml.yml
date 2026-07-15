@@ -114,17 +114,17 @@ socials:
       icon: /data/svg/bilibili.svg
       link: https://space.bilibili.com/350354944
     
-    twitter:
-      icon: /data/svg/Twitter.svg
-      link: https://twitter.com/zhi_cheng233
+    X:
+      icon: /data/svg/X.svg
+      link: https://X.com/zhi_cheng233
 
     Email:
       icon: /data/svg/mail.svg
       link: mailto:mczhicheng@outlook.com
 
-    QQ:
-      icon: /data/svg/QQ.svg
-      link: http://wpa.qq.com/msgrd?v=3&uin=2473367376&site=qq&menu=yes
+    Telegram:
+      icon: /data/svg/telegram.svg
+      link: https://t.me/zhi_cheng233
     
 
     RSS:
