@@ -90,9 +90,9 @@ theme:
   profile_shape: circle # support `circle`, `diamond`, `rounded`
   feature: false
   gradient:
-    color_1: '#5bcefb'
+    color_1: '#ffffff'
     color_2: '#f5a8ba'
-    color_3: '#ffffff'
+    color_3: '#5bcefb'
     # color_1: '#c6ffdd'
     # color_2: '#fbd786'
     # color_3: '#f7797d'
