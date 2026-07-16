@@ -107,7 +107,7 @@ theme:
 socials:
   customs:
     Github:
-      icon: /data/svg/github.svg
+      icon: https://www.w3.org/2000/svg
       link: https://github.com/zhicheng233
     
     bilibili:
