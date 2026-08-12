@@ -1,0 +1,6 @@
+allowBuilds:
+  core-js: set this to true or false
+  deasync: set this to true or false
+  hexo-util: set this to true or false
+  vue-demi: set this to true or false
+  yarn: set this to true or false

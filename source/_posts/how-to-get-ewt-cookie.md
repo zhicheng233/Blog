@@ -6,6 +6,7 @@ tags:
 categories:
   - 教程
   - 软件
+hidden: true
 ---
 # 准备工作
 

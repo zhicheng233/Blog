@@ -9,6 +9,7 @@ cover: /image/79731173_p0.jpg.png
 cssclasses:
   - 软件
   - 白嫖
+hidden: true
 ---
 # 前言
 去年11月份介绍过通过使用 Cloudflare CDN 以达到绕过GFW的方法，但该方法特别挑网站同时效果也不怎么好，本期我们来详细讲讲这个GFW该如何翻~
