@@ -23,9 +23,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install
-        npm install -g hexo-cli
-        npm install hexo-theme-aurora hexo-plugin-aurora --save
+        corepack enable
+        pnpm install --frozen-lockfile
 
     - name: Sync images
       run: |
@@ -34,8 +33,9 @@ jobs:
 
     - name: Build Hexo
       run: |
-        npx hexo clean
-        npx hexo generate
+        pnpm exec hexo clean
+        pnpm exec hexo generate
+        pnpm run verify:seo
 
     - name: Fix rss2.xml
       run: |
