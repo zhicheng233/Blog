@@ -2,11 +2,16 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "verify:seo": "node tools/verify-seo-output.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "hexo": {
     "version": "6.3.0"
