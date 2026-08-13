@@ -17,7 +17,7 @@ const post = fs.readFileSync(postPath, 'utf8');
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
 const robots = fs.readFileSync(robotsPath, 'utf8');
 
-for (const required of ['<title>FixedTime比较在开发中的重要性 | 志成zhi_cheng的Blog</title>', '时间侧信道攻击', 'rel="canonical"', 'application/ld+json']) {
+for (const required of ['<title>FixedTime比较在开发中的重要性 | 志成zhi_cheng的Blog</title>', '时间侧信道攻击', 'rel="canonical"', 'application/ld+json', 'id="app"', 'static/js/120aa8f8.js']) {
   if (!post.includes(required)) throw new Error(`Target post is missing ${required}`);
 }
 

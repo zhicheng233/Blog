@@ -67,15 +67,28 @@ function staticPostPage(post, indexable = true) {
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
   <script type="application/ld+json">${escapeJson(schema)}</script>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/static/css/a14e1a22.css">
 </head>
-<body>
-  <main>
+<body id="body-container">
+  <div id="app"></div>
+  <main id="seo-fallback">
     <article>
       <h1>${escapeHtml(post.title)}</h1>
       <p>发布于 <time datetime="${escapeHtml(published || '')}">${escapeHtml(post.date ? post.date.format('YYYY-MM-DD') : '')}</time></p>
       ${content}
     </article>
   </main>
+  <script>
+    const fallback = document.getElementById('seo-fallback');
+    const app = document.getElementById('app');
+    const hideFallback = () => {
+      if (app && app.childElementCount > 0 && fallback) fallback.hidden = true;
+    };
+    new MutationObserver(hideFallback).observe(app, { childList: true, subtree: true });
+    hideFallback();
+  </script>
+  <script type="module" crossorigin src="/static/js/120aa8f8.js"></script>
 </body>
 </html>`;
 }
