@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>如何不使用科学上网工具直连访问受限网站 | 志成zhi_cheng的Blog</title>
+  <meta name="description" content="前言 又到了一年一度的敏感期，各大梯子供应商该跑的跑，暂停服务的暂停服务，再加上HAX最近不知道发生什么其节点整天爆炸，真的是太难熬了。正好看到隔壁萌幻通过CF的CDN加速解决了被墙的问题于是研究了一下，便有了这篇文章。 特别注意 警告! 严禁使用该方法访问非法网站! 严禁使用该方法访问对国家安全造成危害的网站! 特别">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://blog.zhicheng233.top/post/How-to-access-restricted-websites-by-direct/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="如何不使用科学上网工具直连访问受限网站">
+  <meta property="og:description" content="前言 又到了一年一度的敏感期，各大梯子供应商该跑的跑，暂停服务的暂停服务，再加上HAX最近不知道发生什么其节点整天爆炸，真的是太难熬了。正好看到隔壁萌幻通过CF的CDN加速解决了被墙的问题于是研究了一下，便有了这篇文章。 特别注意 警告! 严禁使用该方法访问非法网站! 严禁使用该方法访问对国家安全造成危害的网站! 特别">
+  <meta property="og:url" content="https://blog.zhicheng233.top/post/How-to-access-restricted-websites-by-direct/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何不使用科学上网工具直连访问受限网站","mainEntityOfPage":"https://blog.zhicheng233.top/post/How-to-access-restricted-websites-by-direct/","url":"https://blog.zhicheng233.top/post/How-to-access-restricted-websites-by-direct/","datePublished":"2022-11-06T11:53:51.000Z","dateModified":"2026-08-14T21:35:28.514Z","description":"前言 又到了一年一度的敏感期，各大梯子供应商该跑的跑，暂停服务的暂停服务，再加上HAX最近不知道发生什么其节点整天爆炸，真的是太难熬了。正好看到隔壁萌幻通过CF的CDN加速解决了被墙的问题于是研究了一下，便有了这篇文章。 特别注意 警告! 严禁使用该方法访问非法网站! 严禁使用该方法访问对国家安全造成危害的网站! 特别","author":{"@type":"Person","name":"志成zhi_cheng"},"publisher":{"@type":"Organization","name":"志成zhi_cheng的Blog"},"image":"https://blog.zhicheng233.top/image/79731173_p0.jpg.png"}</script>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/static/css/a14e1a22.css">
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+</head>
+<body id="body-container">
+  <div id="app"></div>
+  <main id="seo-fallback">
+    <article>
+      <h1>如何不使用科学上网工具直连访问受限网站</h1>
+      <p>发布于 <time datetime="2022-11-06T11:53:51.000Z">2022-11-06</time></p>
+      <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>又到了一年一度的敏感期，各大梯子供应商该跑的跑，暂停服务的暂停服务，再加上HAX最近不知道发生什么其节点整天爆炸，真的是太难熬了。正好看到隔壁萌幻通过CF的CDN加速解决了被墙的问题于是研究了一下，便有了这篇文章。</p>
+<div class="custom-quote danger">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M19.76 5.23C15.84 5.23 12 2 12 2C12 2 8.15996 5.23 4.23996 5.23C4.23996 5.23 1.86996 16.99 12 22C22.13 16.99 19.76 5.23 19.76 5.23Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12 8V13"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 16H12"></path>
+</svg>
+</span>
+<p class="custom-quote-title">特别注意</p>
+<p>警告! 严禁使用该方法访问非法网站! 严禁使用该方法访问对国家安全造成危害的网站!</p>
+</div>
+<div class="custom-quote danger">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M19.76 5.23C15.84 5.23 12 2 12 2C12 2 8.15996 5.23 4.23996 5.23C4.23996 5.23 1.86996 16.99 12 22C22.13 16.99 19.76 5.23 19.76 5.23Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12 8V13"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 16H12"></path>
+</svg>
+</span>
+<p class="custom-quote-title">特别注意</p>
+<p>似乎有部分地区已经以反诈为借口屏蔽了 Cloudflare CDN 所有 IP 段？<br><a href="https://github.com/XIU2/CloudflareSpeedTest/issues/217">#217</a> <a href="https://github.com/XIU2/CloudflareSpeedTest/issues/188">#188</a></p>
+</div>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>通过软件优选 Cloudflare 公开了所有IP 段，并更改Hosts文件。<br>具体请看：<br><a href="https://github.com/XIU2/CloudflareSpeedTest">GitHub - XIU2&#x2F;CloudflareSpeedTest: 🌩「自选优选 IP」测试 Cloudflare CDN 延迟和速度，获取最快 IP (IPv4 &#x2F; IPv6)！另外也支持其他 CDN &#x2F; 网站 IP ~</a></p>
+<p>注：该方法自适用于启用了Cloudflare CDN加速的网站</p>
+<h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1><h2 id="1-下载-安装软件"><a href="#1-下载-安装软件" class="headerlink" title="1.下载&amp;安装软件"></a>1.下载&amp;安装软件</h2><p>前往Github下载最新版本的[CloudflareSpeedTest]<a href="https://github.com/XIU2/CloudflareSpeedTest">GitHub - XIU2&#x2F;CloudflareSpeedTest: 🌩「自选优选 IP」测试 Cloudflare CDN 延迟和速度，获取最快 IP (IPv4 &#x2F; IPv6)！另外也支持其他 CDN &#x2F; 网站 IP ~</a><br>解压到任意文件夹</p>
+<div class="custom-quote tip">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M20.86 14.13C20 14.7 19.56 15.74 19.77 16.76C20.13 18.55 18.55 20.13 16.76 19.77C15.74 19.57 14.7 20 14.13 20.86C13.12 22.38 10.89 22.38 9.88 20.86C9.3 20 8.26 19.56 7.24 19.77C5.45 20.13 3.87 18.55 4.23 16.76C4.43 15.74 4 14.7 3.14 14.13C1.62 13.12 1.62 10.89 3.14 9.88C4 9.3 4.44 8.26 4.23 7.24C3.87 5.45 5.45 3.87 7.24 4.23C8.26 4.44 9.3 4 9.87 3.14C10.88 1.62 13.11 1.62 14.12 3.14C14.7 4 15.74 4.44 16.76 4.23C18.55 3.87 20.13 5.45 19.77 7.24C19.56 8.26 20 9.3 20.86 9.87C22.38 10.88 22.38 13.12 20.86 14.13Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12.01 15C12.01 14.5 12.01 14.5 12.01 14.5C12.04 13.75 13 13.46 14.04 12.2C14.41 11.74 14.69 11.41 14.86 10.85C15.15 9.95 14.92 9.18 14.86 9.02C14.8 8.79 14.52 8 13.72 7.46C13.06 7.02 12.42 7 12.14 7C11.9 7 11.36 7 10.78 7.3C10.28 7.56 9.98 7.9 9.83 8.1C9.24 8.82 9.06 9.63 9 10.06"></path>
+<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 18H12.01"></path>
+</svg></span>
+<p class="custom-quote-title">Github无法访问?</p>
+<p>国内官方蓝奏云镜像<br><a href="https://pan.lanzouv.com/b0742hkxe">CloudflareSpeedTest (lanzouv.com)</a></p>
+
+</div>
+<p><img src="/image/20221222_162909.png" alt="image"></p>
+<h2 id="2-运行前准备"><a href="#2-运行前准备" class="headerlink" title="2.运行前准备"></a>2.运行前准备</h2><p>解压完后先不要运行软件，打开资源管理器转到</p>
+<div class="language-txt"><button title="Copy code" class="copy"></button><span class="lang">txt</span><pre class="shiki vitesse-dark" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #dbd7caee">C:\Windows\System32\drivers\etc</span></span></code></pre></div><p>打开hosts文件</p>
+<p>在hosts添加将要访问的网站url<br>格式为:</p>
+<div class="language-txt"><button title="Copy code" class="copy"></button><span class="lang">txt</span><pre class="shiki vitesse-dark" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #dbd7caee">IP + URL</span></span></code></pre></div><p>这里以Iwara为例:</p>
+<div class="language-txt"><button title="Copy code" class="copy"></button><span class="lang">txt</span><pre class="shiki vitesse-dark" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #dbd7caee">127.0.0.1 iwara.tv</span></span>
+<span class="line"><span style="color: #dbd7caee">127.0.0.1 www.iwara.tv</span></span></code></pre></div><div class="custom-quote tip">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M20.86 14.13C20 14.7 19.56 15.74 19.77 16.76C20.13 18.55 18.55 20.13 16.76 19.77C15.74 19.57 14.7 20 14.13 20.86C13.12 22.38 10.89 22.38 9.88 20.86C9.3 20 8.26 19.56 7.24 19.77C5.45 20.13 3.87 18.55 4.23 16.76C4.43 15.74 4 14.7 3.14 14.13C1.62 13.12 1.62 10.89 3.14 9.88C4 9.3 4.44 8.26 4.23 7.24C3.87 5.45 5.45 3.87 7.24 4.23C8.26 4.44 9.3 4 9.87 3.14C10.88 1.62 13.11 1.62 14.12 3.14C14.7 4 15.74 4.44 16.76 4.23C18.55 3.87 20.13 5.45 19.77 7.24C19.56 8.26 20 9.3 20.86 9.87C22.38 10.88 22.38 13.12 20.86 14.13Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12.01 15C12.01 14.5 12.01 14.5 12.01 14.5C12.04 13.75 13 13.46 14.04 12.2C14.41 11.74 14.69 11.41 14.86 10.85C15.15 9.95 14.92 9.18 14.86 9.02C14.8 8.79 14.52 8 13.72 7.46C13.06 7.02 12.42 7 12.14 7C11.9 7 11.36 7 10.78 7.3C10.28 7.56 9.98 7.9 9.83 8.1C9.24 8.82 9.06 9.63 9 10.06"></path>
+<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 18H12.01"></path>
+</svg></span>
+<p class="custom-quote-title">关于IP填写问题</p>
+<p><p>IP填写随便这里以127.0.0.1为例。</p>
+<ul>
+<li>请记住你填写的IP</li>
+<li>请输入正确格式的IP格式</li>
+</ul>
+</p>
+</div>
+<h2 id="3-运行"><a href="#3-运行" class="headerlink" title="3.运行"></a>3.运行</h2><p>进入软件目录，我们发现有3个可执行文件<br>分别为:</p>
+<ul>
+<li>CloudflareST.exe - 软件本体</li>
+<li>cfst_hosts.bat - hosts模式bat批处理文件</li>
+<li>cfst_3proxy.bat - 代理模式bat批处理文件</li>
+</ul>
+<div class="custom-quote tip">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M20.86 14.13C20 14.7 19.56 15.74 19.77 16.76C20.13 18.55 18.55 20.13 16.76 19.77C15.74 19.57 14.7 20 14.13 20.86C13.12 22.38 10.89 22.38 9.88 20.86C9.3 20 8.26 19.56 7.24 19.77C5.45 20.13 3.87 18.55 4.23 16.76C4.43 15.74 4 14.7 3.14 14.13C1.62 13.12 1.62 10.89 3.14 9.88C4 9.3 4.44 8.26 4.23 7.24C3.87 5.45 5.45 3.87 7.24 4.23C8.26 4.44 9.3 4 9.87 3.14C10.88 1.62 13.11 1.62 14.12 3.14C14.7 4 15.74 4.44 16.76 4.23C18.55 3.87 20.13 5.45 19.77 7.24C19.56 8.26 20 9.3 20.86 9.87C22.38 10.88 22.38 13.12 20.86 14.13Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12.01 15C12.01 14.5 12.01 14.5 12.01 14.5C12.04 13.75 13 13.46 14.04 12.2C14.41 11.74 14.69 11.41 14.86 10.85C15.15 9.95 14.92 9.18 14.86 9.02C14.8 8.79 14.52 8 13.72 7.46C13.06 7.02 12.42 7 12.14 7C11.9 7 11.36 7 10.78 7.3C10.28 7.56 9.98 7.9 9.83 8.1C9.24 8.82 9.06 9.63 9 10.06"></path>
+<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 18H12.01"></path>
+</svg></span>
+<p class="custom-quote-title">关于cfst_3proxy.bat</p>
+<p>需要安装3proxy.exe，不需要一个个输入hosts<br>但经过实测兼容性不足，仅在小部分（知名）使用CF的CDN网站有效<br>不推荐<br>具体方法:<a href="https://github.com/XIU2/CloudflareSpeedTest/discussions/71">还在一个个添加 Hosts？完美本地加速所有使用 Cloudflare CDN 的网站方法来了！ · Discussion #71 · XIU2&#x2F;CloudflareSpeedTest (github.com)</a></p>
+
+</div>
+<p>这里我们运行cfst_hosts.bat<br><img src="/image/20221222_165955.png" alt="image"></p>
+<p>输入刚刚编辑hosts文件填入的IP<br>这里以127.0.0.1为例</p>
+<p>输入完后会进入测速阶段，稍作等待即可</p>
+<div class="custom-quote tip">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M20.86 14.13C20 14.7 19.56 15.74 19.77 16.76C20.13 18.55 18.55 20.13 16.76 19.77C15.74 19.57 14.7 20 14.13 20.86C13.12 22.38 10.89 22.38 9.88 20.86C9.3 20 8.26 19.56 7.24 19.77C5.45 20.13 3.87 18.55 4.23 16.76C4.43 15.74 4 14.7 3.14 14.13C1.62 13.12 1.62 10.89 3.14 9.88C4 9.3 4.44 8.26 4.23 7.24C3.87 5.45 5.45 3.87 7.24 4.23C8.26 4.44 9.3 4 9.87 3.14C10.88 1.62 13.11 1.62 14.12 3.14C14.7 4 15.74 4.44 16.76 4.23C18.55 3.87 20.13 5.45 19.77 7.24C19.56 8.26 20 9.3 20.86 9.87C22.38 10.88 22.38 13.12 20.86 14.13Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12.01 15C12.01 14.5 12.01 14.5 12.01 14.5C12.04 13.75 13 13.46 14.04 12.2C14.41 11.74 14.69 11.41 14.86 10.85C15.15 9.95 14.92 9.18 14.86 9.02C14.8 8.79 14.52 8 13.72 7.46C13.06 7.02 12.42 7 12.14 7C11.9 7 11.36 7 10.78 7.3C10.28 7.56 9.98 7.9 9.83 8.1C9.24 8.82 9.06 9.63 9 10.06"></path>
+<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 18H12.01"></path>
+</svg></span>
+<p class="custom-quote-title">关于线程数设置</p>
+<p><p>如果觉得测速速度较慢，可以通过编辑cfst_3proxy.bat修改启动参数来设置线程数，来提升速度<br><img src="/image/20221222_170359.png" alt="image"><br>设置方法:</p>
+<div class="language-txt"><button title="Copy code" class="copy"></button><span class="lang">txt</span><pre class="shiki vitesse-dark" style="background-color: #1a1a1a" tabindex="0"><code><span class="line"><span style="color: #dbd7caee">-n [线程数,默认200最高1000]</span></span></code></pre></div></p>
+</div>
+<h2 id="4-完成"><a href="#4-完成" class="headerlink" title="4.完成!"></a>4.完成!</h2><p>测试完成后检查IP地址中第一行的下载速度是否正常(7MB&#x2F;s+)，如果速度过低请重新运行批处理脚本<br><img src="/image/20221222_170834.png" alt="image"></p>
+<p>如果一切正常的话，那么Hosts将会被自动修改<br><img src="/image/20221222_171318.png" alt="image"></p>
+<h2 id="5-访问测试"><a href="#5-访问测试" class="headerlink" title="5.访问测试"></a>5.访问测试</h2><p>现在尝试通过浏览器访问iwara.tv</p>
+<div class="custom-quote tip">
+<span class="custom-quote-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path fill="" d="M20.86 14.13C20 14.7 19.56 15.74 19.77 16.76C20.13 18.55 18.55 20.13 16.76 19.77C15.74 19.57 14.7 20 14.13 20.86C13.12 22.38 10.89 22.38 9.88 20.86C9.3 20 8.26 19.56 7.24 19.77C5.45 20.13 3.87 18.55 4.23 16.76C4.43 15.74 4 14.7 3.14 14.13C1.62 13.12 1.62 10.89 3.14 9.88C4 9.3 4.44 8.26 4.23 7.24C3.87 5.45 5.45 3.87 7.24 4.23C8.26 4.44 9.3 4 9.87 3.14C10.88 1.62 13.11 1.62 14.12 3.14C14.7 4 15.74 4.44 16.76 4.23C18.55 3.87 20.13 5.45 19.77 7.24C19.56 8.26 20 9.3 20.86 9.87C22.38 10.88 22.38 13.12 20.86 14.13Z" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M12.01 15C12.01 14.5 12.01 14.5 12.01 14.5C12.04 13.75 13 13.46 14.04 12.2C14.41 11.74 14.69 11.41 14.86 10.85C15.15 9.95 14.92 9.18 14.86 9.02C14.8 8.79 14.52 8 13.72 7.46C13.06 7.02 12.42 7 12.14 7C11.9 7 11.36 7 10.78 7.3C10.28 7.56 9.98 7.9 9.83 8.1C9.24 8.82 9.06 9.63 9 10.06"></path>
+<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M11.99 18H12.01"></path>
+</svg></span>
+<p class="custom-quote-title">提示</p>
+<p>必要时可以通过Ctrl+F5来刷新浏览器缓存</p>
+
+</div>
+<p><img src="/image/20221222_172813.png" alt="image"></p>
+<h1 id="进阶-必看"><a href="#进阶-必看" class="headerlink" title="进阶(必看!!!)"></a>进阶(必看!!!)</h1><p>现在我们已经可以访问到iwara.tv，但是我们发现iwara.tv的图片并不能加载出来</p>
+<p>如图:<br><img src="/image/20221222_172813.png" alt="image"></p>
+<h2 id="1-通过F12开发者工具手动逐条添加"><a href="#1-通过F12开发者工具手动逐条添加" class="headerlink" title="1.通过F12开发者工具手动逐条添加"></a>1.通过F12开发者工具手动逐条添加</h2><p>通过F12打开开发者工具分析，我们发现I站的图片是通过i.iwara.tv这个域名来请求的<br><img src="/image/20221222_173318.png" alt="image"></p>
+<p>这下事情就变得简单了，将i.iwara.tv添加到Hosts文件即可<br>如图:<br><img src="/image/20221222_173705.png" alt="image"></p>
+<p>刷新网页，图片正常显示<br><img src="/image/20221222_171708.png" alt="image"></p>
+<p>对于视频也是如此,将域名添加至hosts文件<br><img src="/image/20221222_175006.png" alt="image"></p>
+<h2 id="2-通过第三方网站解析子域，实现批量添加"><a href="#2-通过第三方网站解析子域，实现批量添加" class="headerlink" title="2.通过第三方网站解析子域，实现批量添加"></a>2.通过第三方网站解析子域，实现批量添加</h2><p>很显然，上面的方法过于繁琐且效率低下，接下来我们将使用更暴力的方法</p>
+<p>访问<a href="https://chaziyu.com/">查子域</a><br>输入主域名点击 查子域名 等待即可</p>
+<p><img src="/image/20221222_175557.png" alt="image"><br>将查询到的子域名添加到Hosts即可</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>如果感觉速度不行或出现无法访问的情况请重新运行批处理脚本刷新CDN加速IP</p>
+<!-- flag of hidden posts -->
+    </article>
+  </main>
+  <script>
+    const fallback = document.getElementById('seo-fallback');
+    const app = document.getElementById('app');
+    const hideFallback = () => {
+      if (app && app.childElementCount > 0 && fallback) fallback.hidden = true;
+    };
+    new MutationObserver(hideFallback).observe(app, { childList: true, subtree: true });
+    hideFallback();
+  </script>
+  <script type="module" crossorigin src="/static/js/120aa8f8.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>解决Office无法运行0x426-0x0 安装报0xc000005 | 志成zhi_cheng的Blog</title>
+  <meta name="description" content="前几天突然要用Word于是就打开了N年没开的Office 365,结果发现无法运行 当时尝试在Windows设置里面运行Office修复程序，结果连修复程序都打不开( 后面选择果断卸载结果发现连卸载都卸载不了😅 后面手动卸载后，尝试重新部署结果发现好家伙连部署程序都运行不了报0xc000005而且这个错误代码是内存相">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://blog.zhicheng233.top/post/%E8%A7%A3%E5%86%B3Office%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C0x426-0x0%20%E5%AE%89%E8%A3%85%E6%8A%A50xc000005/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="解决Office无法运行0x426-0x0 安装报0xc000005">
+  <meta property="og:description" content="前几天突然要用Word于是就打开了N年没开的Office 365,结果发现无法运行 当时尝试在Windows设置里面运行Office修复程序，结果连修复程序都打不开( 后面选择果断卸载结果发现连卸载都卸载不了😅 后面手动卸载后，尝试重新部署结果发现好家伙连部署程序都运行不了报0xc000005而且这个错误代码是内存相">
+  <meta property="og:url" content="https://blog.zhicheng233.top/post/%E8%A7%A3%E5%86%B3Office%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C0x426-0x0%20%E5%AE%89%E8%A3%85%E6%8A%A50xc000005/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"解决Office无法运行0x426-0x0 安装报0xc000005","mainEntityOfPage":"https://blog.zhicheng233.top/post/%E8%A7%A3%E5%86%B3Office%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C0x426-0x0%20%E5%AE%89%E8%A3%85%E6%8A%A50xc000005/","url":"https://blog.zhicheng233.top/post/%E8%A7%A3%E5%86%B3Office%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C0x426-0x0%20%E5%AE%89%E8%A3%85%E6%8A%A50xc000005/","datePublished":"2024-12-01T00:00:00.000Z","dateModified":"2026-08-14T21:35:28.552Z","description":"前几天突然要用Word于是就打开了N年没开的Office 365,结果发现无法运行 当时尝试在Windows设置里面运行Office修复程序，结果连修复程序都打不开( 后面选择果断卸载结果发现连卸载都卸载不了😅 后面手动卸载后，尝试重新部署结果发现好家伙连部署程序都运行不了报0xc000005而且这个错误代码是内存相","author":{"@type":"Person","name":"志成zhi_cheng"},"publisher":{"@type":"Organization","name":"志成zhi_cheng的Blog"},"image":"https://blog.zhicheng233.top/image/Pasted%20image%2020241130220924.png"}</script>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/static/css/a14e1a22.css">
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+</head>
+<body id="body-container">
+  <div id="app"></div>
+  <main id="seo-fallback">
+    <article>
+      <h1>解决Office无法运行0x426-0x0 安装报0xc000005</h1>
+      <p>发布于 <time datetime="2024-12-01T00:00:00.000Z">2024-12-01</time></p>
+      <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前几天突然要用Word于是就打开了N年没开的Office 365,结果发现无法运行</p>
+<p><img src="/image/Pasted%20image%2020241130220924.png"></p>
+<p>当时尝试在Windows设置里面运行Office修复程序，结果连修复程序都打不开(<br>后面选择果断卸载结果发现连卸载都卸载不了😅<br>后面手动卸载后，尝试重新部署结果发现好家伙连部署程序都运行不了报0xc000005而且这个错误代码是内存相关的，一点问题都排查不出来(<br>后面找了半天发现在 <a href="https://github.com/sandboxie-plus/Sandboxie">Sandboxie</a> 的Issuse中发现有人提了相关的问题<br><a href="https://github.com/sandboxie-plus/Sandboxie/issues/1482">Microsoft Office 365 error 0x426-0x0 · Issue #1482 · sandboxie-plus&#x2F;Sandboxie</a><br><a href="https://github.com/sandboxie-plus/Sandboxie/issues/1468">[1.0.5 &#x2F; 5.55.5] Error 0x426-0x0 with Office 2021 when launching programs · Issue #1468 · sandboxie-plus&#x2F;Sandboxie</a><br>咱一开始是不怎么信的因为咱都快忘了咱装过Sandboxie，况且咱用了这么就一直没问题，这Issuse是 2021 提出来的。后面实在没法尝试了一下Issues给出的解决方法更新Sandboxie。<br>然后………就解决了……..当时是真无语了………<br><img src="/image/QQ_1732976400259.png"></p>
+
+    </article>
+  </main>
+  <script>
+    const fallback = document.getElementById('seo-fallback');
+    const app = document.getElementById('app');
+    const hideFallback = () => {
+      if (app && app.childElementCount > 0 && fallback) fallback.hidden = true;
+    };
+    new MutationObserver(hideFallback).observe(app, { childList: true, subtree: true });
+    hideFallback();
+  </script>
+  <script type="module" crossorigin src="/static/js/120aa8f8.js"></script>
+</body>
+</html>
