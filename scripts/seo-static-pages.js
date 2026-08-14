@@ -30,6 +30,16 @@ function absoluteUrl(path) {
   return new URL(path, `${SITE_URL}/`).href;
 }
 
+function commentStylesheet() {
+  const themeConfig = Object.assign({}, hexo.theme.config || {}, hexo.config.theme_config || {});
+
+  if (themeConfig.waline && themeConfig.waline.enable) {
+    return '  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">';
+  }
+
+  return '';
+}
+
 function staticPostPage(post, indexable = true) {
   const canonical = absoluteUrl(post.path);
   const title = `${post.title} | 志成zhi_cheng的Blog`;
@@ -69,6 +79,7 @@ function staticPostPage(post, indexable = true) {
   <script type="application/ld+json">${escapeJson(schema)}</script>
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/static/css/a14e1a22.css">
+${commentStylesheet()}
 </head>
 <body id="body-container">
   <div id="app"></div>
